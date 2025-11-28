@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khdamni - ربط أصحاب العمل بالعمال</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* أسود أكثر */
+            color: #ffffff; /* أبيض للنصوص */
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        header {
+            background-color: #8B0000; /* أحمر غامق */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .section {
+            background-color: #000000; /* سوداء بشكل أساسي */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border: 2px solid #8B0000; /* حدود حمراء للتأكيد */
+        }
+        .section.red-bg {
+            background-color: #8B0000; /* بعض الخانات حمراء فقط */
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .icon {
+            font-size: 4em; /* حجم كبير للرموز */
+            color: #000000; /* سوداء */
+            background-color: #ffffff; /* خلفية بيضاء للتباين */
+            border-radius: 10px;
+            padding: 20px;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .icon span {
+            font-size: 0.5em; /* حجم النص تحت الرمز */
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .search {
+            text-align: center;
+        }
+        .search input {
+            padding: 10px;
+            width: 300px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .search button {
+            padding: 10px 20px;
+            background-color: #8B0000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search button:hover {
+            background-color: #A52A2A;
+        }
+        .services-list {
+            list-style: none;
+            padding: 0;
+        }
+        .services-list li {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .services-list li:hover {
+            background-color: #f0f0f0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #8B0000;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #333333;
+        }
+        footer {
+            background-color: #000000;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #8B0000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>khdamni</h1>
+        <p>موقع يربط أصحاب العمل بالعمال بسهولة</p>
+    </header>
+
+    <div class="container">
+        <!-- وصف الموقع -->
+        <div class="section">
+            <h2>وصف الموقع</h2>
+            <p>khdamni هو منصة إلكترونية تربط بين أصحاب العمل الذين يبحثون عن عمال مؤهلين والعمال الذين يبحثون عن فرص عمل. يمكن لأصحاب العمل نشر الأعمال ومتطلباتها (مثل المهارات والخبرات)، بينما يمكن للعمال نشر مؤهلاتهم وشهاداتهم. يدعم الموقع التصفح والبحث للعثور على التطابق المثالي.</p>
+        </div>
+
+        <!-- رموز الأعمال -->
+        <div class="section red-bg">
+            <h2>أمثلة على الأعمال</h2>
+            <div class="icons">
+                <div class="icon">
+                    🔨
+                    <span>عمل بناء</span>
+                </div>
+                <div class="icon">
+                    💼
+                    <span>عمل مكتبي</span>
+                </div>
+                <div class="icon">
+                    💻
+                    <span>عمل تقني</span>
+                </div>
+                <div class="icon">
+                    🛠️
+                    <span>عمل خدمات</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- منطقة التصفح والخدمات -->
+        <div class="section">
+            <h2>منطقة التصفح والخدمات</h2>
+            <p>تصفح الوظائف المتاحة أو ابحث عن عمال مؤهلين. إليك قائمة ببعض الخدمات الشائعة:</p>
+            <ul class="services-list">
+                <li>عامل بناء - خبرة 5 سنوات</li>
+                <li>مبرمج ويب - مهارات في HTML وCSS</li>
+                <li>عامل خدمات منزلية - شهادة في التنظيف</li>
+                <li>محاسب - خبرة في المالية</li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="ابحث عن وظيفة أو عامل (مثل: بناء، مبرمج)">
+                <button>بحث</button>
+            </div>
+            <p>نتائج البحث ستظهر هنا (في النسخة الكاملة، ستكون مرتبطة بقاعدة بيانات).</p>
+        </div>
+
+        <!-- منطقة النشر -->
+        <div class="section red-bg">
+            <h2>منطقة النشر</h2>
+            <p>انشر مؤهلاتك كعامل أو وظيفتك كصاحب عمل.</p>
+            
+            <!-- نموذج للعامل -->
+            <h3>نشر مؤهلات العامل</h3>
+            <form>
+                <div class="form-group">
+                    <label for="worker-name">الاسم الكامل:</label>
+                    <input type="text" id="worker-name" placeholder="أدخل اسمك">
+                </div>
+                <div class="form-group">
+                    <label for="worker-skills">المهارات والمؤهلات:</label>
+                    <textarea id="worker-skills" placeholder="مثل: خبرة في البناء، شهادة في الهندسة"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="worker-certificates">الشهادات (اختياري):</label>
+                    <input type="file" id="worker-certificates" multiple>
+                </div>
+                <div class="form-group">
+                    <button type="submit">نشر المؤهلات</button>
+                </div>
+            </form>
+            
+            <!-- نموذج لصاحب العمل -->
+            <h3>نشر الوظيفة</h3>
+            <form>
+                <div class="form-group">
+                    <label for="job-title">عنوان الوظيفة:</label>
+                    <input type="text" id="job-title" placeholder="مثل: عامل بناء">
+                </div>
+                <div class="form-group">
+                    <label for="job-description">وصف الوظيفة ومتطلباتها:</label>
+                    <textarea id="job-description" placeholder="مثل: خبرة في البناء، ساعات عمل يومية"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="job-location">الموقع:</label>
+                    <input type="text" id="job-location" placeholder="مثل: الرياض">
+                </div>
+                <div class="form-group">
+                    <button type="submit">نشر الوظيفة</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 khdamni. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
